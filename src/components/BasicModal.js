@@ -1,20 +1,21 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import Modal from '@mui/material/Modal';
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import Modal from "@mui/material/Modal";
 
 const style = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
   width: 400,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
+  bgcolor: "background.paper",
+  border: "2px solid #000",
   boxShadow: 24,
   p: 4,
-  backgroundColor: 'purple',
+  backgroundColor: "white",
+  display: "flex",
 };
 
 export default function BasicModal() {
@@ -32,6 +33,30 @@ export default function BasicModal() {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
+          <form>
+
+          <div>
+          <label>Date</label>
+          <input
+            type='date'
+            min='2019-01-01'
+            max='2022-12-31'
+          />
+        </div>
+            <div>
+              <label>Nome do Lead</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label>E-mail</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label>Telefone</label>
+              <input type="text" />
+            </div>
+
+          </form>
           <Typography id="modal-modal-title" variant="h6" component="h2">
             Text in a modal
           </Typography>
@@ -43,4 +68,3 @@ export default function BasicModal() {
     </div>
   );
 }
-
