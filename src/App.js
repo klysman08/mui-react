@@ -1,14 +1,20 @@
 import * as React from 'react';
 import BasicModal from './components/BasicModal';
 import BasicList from './components/BasicList';
+import BasicGrid from './components/BasicGrid';
 
 
 function App() {
   return (
     <div>
   
-    <BasicModal />
-    <BasicList />
+    <BasicGrid />
+
+    {/* <BasicModal />
+    <BasicList /> */}
+
+    
+
 
 
     </div>
