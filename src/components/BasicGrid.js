@@ -8,6 +8,7 @@ import Grid from '@mui/material/Grid';
 import BasicList from './BasicList';
 import BasicModal from './BasicModal';
 import SearchAppBar from './SearchAppBar';
+import MediaCard from './MediaCard';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -37,6 +38,15 @@ export default function BasicGrid() {
           <SearchAppBar>xs=4</SearchAppBar>
         </Grid>
       </Grid>
+
+      <Grid container spacing={2}>
+        <Grid item xs={2}>
+          <MediaCard>xs=8</MediaCard>
+        </Grid>
+
+      </Grid>
+
+      
 
       
     </Box>

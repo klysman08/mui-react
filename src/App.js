@@ -2,6 +2,7 @@ import * as React from 'react';
 import BasicModal from './components/BasicModal';
 import BasicList from './components/BasicList';
 import BasicGrid from './components/BasicGrid';
+import MediaCard from './components/MediaCard';
 
 
 function App() {
