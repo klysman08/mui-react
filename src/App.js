@@ -9,6 +9,7 @@ function App() {
     <div>
   
     <BasicGrid />
+    <BasicGrid />
 
     {/* <BasicModal />
     <BasicList /> */}
