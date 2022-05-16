@@ -30,11 +30,11 @@ export default function BasicGrid() {
       </Grid>
 
       <Grid container spacing={2}>
-        <Grid item xs={3}>
+        <Grid item xs={2}>
           <BasicModal>xs=8</BasicModal>
         </Grid>
-        <Grid item xs={9}>
-          <BasicList>xs=4</BasicList>
+        <Grid item xs={10} md={3}>
+          <SearchAppBar>xs=4</SearchAppBar>
         </Grid>
       </Grid>
 
